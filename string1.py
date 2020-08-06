@@ -45,19 +45,16 @@ def donuts(count):
 
 
 def both_ends(s):
-    # your code here
-    return
 
-
-# C. fix_start
-# Given a string s, return a string where all occurrences
-# of its first character have been changed to '*', except
-# do not change the first character itself.
-# Example:
-#   'babble' -> 'ba**le'
-# Assume that the string is length 1 or more.
-# Hint: s.replace(stra, strb) returns a version of string s
-# where all instances of stra have been replaced by strb.
+    # C. fix_start
+    # Given a string s, return a string where all occurrences
+    # of its first character have been changed to '*', except
+    # do not change the first character itself.
+    # Example:
+    #   'babble' -> 'ba**le'
+    # Assume that the string is length 1 or more.
+    # Hint: s.replace(stra, strb) returns a version of string s
+    # where all instances of stra have been replaced by strb.
 
 
 def fix_start(s):
