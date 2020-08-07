@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """
-Kenzie assignment: String1 
+Kenzie assignment: String1
 test
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "???"
+# __author__ =
+# function fix_start:  https: // stackoverflow.com/questions/13977659/google-python-class-string1-exercise
+# ""
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -45,6 +47,14 @@ def donuts(count):
 
 
 def both_ends(s):
+    first_two = ''.join(list(s[0:2]))
+    last_two = ''.join(list(s[-2:]))
+    new_word = first_two + last_two
+
+    if len(s) <= 2:
+        return ''
+
+    return new_word
 
     # C. fix_start
     # Given a string s, return a string where all occurrences
@@ -58,8 +68,11 @@ def both_ends(s):
 
 
 def fix_start(s):
-    # your code here
-    return
+    first = s[0]
+    repeat = s[1:]
+    repeat = repeat.replace(first, '*')
+
+    return first + repeat
 
 
 # D. mix_up
@@ -73,8 +86,15 @@ def fix_start(s):
 
 
 def mix_up(a, b):
-    # your code here
-    return
+    a_first_word = a[0:2]
+    a_one_letter = b[2:]
+    a_word = a_first_word + a_one_letter
+
+    b_first_word = b[0:2]
+    b_one_letter = a[2:]
+    b_word = b_first_word + b_one_letter
+
+    return f'{b_word} {a_word}'
 
 
 # Provided simple test() function used in main() to print
