@@ -5,7 +5,7 @@ test
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-# __author__ = function fix_start:  "https: // stackoverflow.com/questions/13977659/google-python-class-string1-exercise"
+__author__ = "https://stackoverflow.com/questions/13977659 google-python-class-string1-exercise"
 
 
 # Copyright 2010 Google Inc.

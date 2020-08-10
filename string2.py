@@ -12,7 +12,7 @@ __author__ = "Amanda help with front_back"
 
 # Instructions:
 # Complete each of these string exercises in the same way as the
-# previous String1 excercises.
+# previous String1 exercises.
 
 # D. verbing
 # Given a string, if its length is at least 3, add 'ing' to its
@@ -61,29 +61,31 @@ def not_bad(s):
 
 
 def front_back(a, b):
-
     if len(a) % 2 == 0:
         a_middle = (len(a)//2)
+        # print((len(a)//2))
         # print(a)
-        afront = a[0:a_middle]
-        aback = a[a_middle::]
+        a_front = a[0:a_middle]
+        a_back = a[a_middle::]
     else:
         a_middle = (len(a)//2)
+        print((len(a)//2))
         # print(a)
-        afront = a[0:a_middle+1]
-        aback = a[a_middle+1::]
+        a_front = a[0:a_middle+1]
+        a_back = a[a_middle+1::]
     if len(b) % 2 == 0:
         b_middle = (len(b)//2)
-        print(b)
-        bfront = b[0:b_middle]
-        bback = b[b_middle::]
+        print((len(b)//2))
+        # print(b)
+        b_front = b[0:b_middle]
+        b_back = b[b_middle::]
     else:
         b_middle = (len(b)//2)
         print((len(b)//2))
-        print(b)
-        bfront = b[0:b_middle+1]
-        bback = b[b_middle+1::]
-    return afront+bfront+aback+bback
+        # print(b)
+        b_front = b[0:b_middle+1]
+        b_back = b[b_middle+1::]
+    return a_front+b_front+a_back+b_back
 
 
 # Provided simple test() function used in main() to print
