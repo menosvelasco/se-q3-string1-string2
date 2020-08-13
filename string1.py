@@ -5,6 +5,7 @@ test
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
+__author__ = "Manuel"
 __author__ = "https://stackoverflow.com/questions/13977659 google-python-class-string1-exercise"
 
 
@@ -46,14 +47,13 @@ def donuts(count):
 
 
 def both_ends(s):
-    first_two = ''.join(list(s[0:2]))
-    last_two = ''.join(list(s[-2:]))
-    new_word = first_two + last_two
+    if len(s) > 2:
+        first_two = ''.join(s[0:2])
+        last_two = ''.join(s[-2:])
 
-    if len(s) <= 2:
+        return first_two + last_two
+    else:
         return ''
-
-    return new_word
 
     # C. fix_start
     # Given a string s, return a string where all occurrences
