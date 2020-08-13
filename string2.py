@@ -4,7 +4,9 @@ Kenzie assignment: String2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
+__author__ = "Manuel"
 __author__ = "Amanda help with front_back"
+__author__ = "https://w3resource.com/python-exercises/string/python-data-type-string-exercise-7.php"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -42,12 +44,14 @@ def verbing(s):
 
 
 def not_bad(s):
-    bad_word = 'not so bad'
-    bad_word2 = 'not that bad'
-    s = s.replace(bad_word, 'good')
-    s = s.replace(bad_word2, 'good')
+    not_str = s.find('not')
+    bad_str = s.find('bad')
 
-    return s
+    if bad_str > not_str:
+        s = s.replace(s[not_str:(bad_str+4)], 'good!')
+        return s
+    else:
+        return s
 
 
 # F. front_back
