@@ -5,9 +5,12 @@ test
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Manuel"
-__author__ = "https://stackoverflow.com/questions/13977659 google-python-class-string1-exercise"
-
+__author__ = (
+    """
+    Manuel velasco
+    https://stackoverflow.com/questions/13977659 google-python-class-string1-exercise
+ """
+)
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
