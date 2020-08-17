@@ -8,7 +8,7 @@ test
 __author__ = (
     """
     Manuel velasco
-    https://stackoverflow.com/questions/13977659 google-python-class-string1-exercise
+    https://stackoverflow.com/questions/13977659/google-python-class-string1-exercise
  """
 )
 

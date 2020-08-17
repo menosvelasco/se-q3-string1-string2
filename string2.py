@@ -26,7 +26,6 @@ __author__ = (
 # instead.
 # If the string length is less than 3, leave it unchanged.
 # Return the resulting string.
-import math
 
 
 def verbing(s):
@@ -50,14 +49,12 @@ def verbing(s):
 def not_bad(s):
     not_str = s.find('not')
     bad_str = s.find('bad')
-    #bad_secon = s.find('bad!')
+
     # print(s)
     # print(s[14:22])
     # print(s[not_str:(bad_str+1)])
     if not_str < bad_str:
         return s.replace(s[not_str:bad_str+3], 'good')
-    # if not_str < bad_secon:
-        # return s.replace(s[not_str:(bad_secon+4)], 'good!')
     else:
         return s
 
