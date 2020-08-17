@@ -4,9 +4,13 @@ Kenzie assignment: String2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Manuel"
-__author__ = "Amanda help with front_back"
-__author__ = "https://w3resource.com/python-exercises/string/python-data-type-string-exercise-7.php"
+__author__ = (
+    """
+    Manuel Velasco
+    Amanda help with front_back
+    https://w3resource.com/python-exercises/string/python-data-type-string-exercise-7.php
+"""
+)
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -46,10 +50,14 @@ def verbing(s):
 def not_bad(s):
     not_str = s.find('not')
     bad_str = s.find('bad')
-
-    if bad_str > not_str:
-        s = s.replace(s[not_str:(bad_str+4)], 'good!')
-        return s
+    #bad_secon = s.find('bad!')
+    # print(s)
+    # print(s[14:22])
+    # print(s[not_str:(bad_str+1)])
+    if not_str < bad_str:
+        return s.replace(s[not_str:bad_str+3], 'good')
+    # if not_str < bad_secon:
+        # return s.replace(s[not_str:(bad_secon+4)], 'good!')
     else:
         return s
 
@@ -73,19 +81,19 @@ def front_back(a, b):
         a_back = a[a_middle::]
     else:
         a_middle = (len(a)//2)
-        print((len(a)//2))
+        # print((len(a)//2))
         # print(a)
         a_front = a[0:a_middle+1]
         a_back = a[a_middle+1::]
     if len(b) % 2 == 0:
         b_middle = (len(b)//2)
-        print((len(b)//2))
+        # print((len(b)//2))
         # print(b)
         b_front = b[0:b_middle]
         b_back = b[b_middle::]
     else:
         b_middle = (len(b)//2)
-        print((len(b)//2))
+        # print((len(b)//2))
         # print(b)
         b_front = b[0:b_middle+1]
         b_back = b[b_middle+1::]
